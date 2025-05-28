@@ -1,0 +1,17 @@
+{
+  "name": "UI improvements for YouTube Music",
+  "description": "Improves the style of YouTube Music's UI",
+  "version": "0.4",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["http://music.youtube.com/*", "https://music.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
+}
